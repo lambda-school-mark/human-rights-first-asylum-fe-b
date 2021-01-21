@@ -7,13 +7,13 @@ import Logout from './Logout';
 const { Title } = Typography;
 
 const Header = () => {
-  const menu = (
-    <Menu>
-      <Menu.Item>
-        <Logout />
-      </Menu.Item>
-    </Menu>
-  );
+  // const menu = (
+  //   <Menu>
+  //     <Menu.Item>
+  //       <Logout />
+  //     </Menu.Item>
+  //   </Menu>
+  // );
 
   return (
     <>
@@ -23,14 +23,15 @@ const Header = () => {
           mode="horizontal"
           style={{ backgroundColor: 'inherit', border: 'none' }}
         >
-          <Menu.Item>Who We Are</Menu.Item>
+          {/* <Menu.Item>Who We Are</Menu.Item> */}
           <Menu.Item>
             <Button type="primary">Upload</Button>
           </Menu.Item>
           <Menu.Item>
-            <Dropdown overlay={menu}>
+            <Logout />
+            {/* <Dropdown overlay={menu}>
               <Avatar size={50} icon={<UserOutlined />} />
-            </Dropdown>
+            </Dropdown> */}
           </Menu.Item>
         </Menu>
       </StyledHeader>
