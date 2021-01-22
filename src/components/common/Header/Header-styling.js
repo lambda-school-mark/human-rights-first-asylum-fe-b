@@ -11,11 +11,28 @@ export const StyledHeader = styled(Header)`
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
   height: 10vh;
+
   h1,
   ul {
     // Title component in Ant Design
     margin: auto 0;
     color: var(--white);
+  }
+
+  // title flex
+  div {
+    display: flex;
+  }
+
+  //title font
+  .titleFont {
+    font-family: 'Crimson Text', serif;
+  }
+
+  //span italic for "first"
+  .italic {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
   }
 
   ul {
@@ -26,15 +43,23 @@ export const StyledHeader = styled(Header)`
     font-size: 2rem;
   }
 
+  //upload button
   button {
     width: 90px;
     height: 35px;
   }
 
+  //logout button
   svg {
     width: 25px;
     height: 25px;
-    /* margin: auto 0; */
     margin-top: 20px;
+  }
+
+  //logo png
+  img {
+    height: 60px;
+    margin: auto 0;
+    padding: 4px;
   }
 `;

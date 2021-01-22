@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Avatar, Typography, Menu, Dropdown } from 'antd';
+import { Button, Avatar, Typography, Menu, AutoComplete } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { StyledHeader } from './Header-styling';
 import Logout from './Logout';
+import Logo from '../../../assets/logo.png';
 
 const { Title } = Typography;
 
@@ -18,7 +19,12 @@ const Header = () => {
   return (
     <>
       <StyledHeader>
-        <Title>Human Rights First</Title>
+        <div>
+          <img src={Logo} alt="Human Rights First Logo"></img>
+          <Title className="titleFont">
+            human rights <span className="italic">first</span>
+          </Title>
+        </div>
         <Menu
           mode="horizontal"
           style={{ backgroundColor: 'inherit', border: 'none' }}
